@@ -23,6 +23,10 @@ module OmniAuth
           :email => email_address,
           :first_name => localized_field('firstName'),
           :last_name => localized_field('lastName'),
+          :name => [
+            localized_field('firstName'),
+            localized_field('lastName')
+          ].join(' '),
           :picture_url => picture_url
         }
       end
