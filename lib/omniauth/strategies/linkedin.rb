@@ -27,6 +27,7 @@ module OmniAuth
             localized_field('firstName'),
             localized_field('lastName')
           ].join(' '),
+          :image => picutre_url,
           :picture_url => picture_url
         }
       end
